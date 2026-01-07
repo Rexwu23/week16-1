@@ -1,0 +1,147 @@
+/* 作業風格：乾淨、像講義、排版整齊 */
+
+* { box-sizing: border-box; }
+body{
+  margin:0;
+  font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  background:#ffffff;
+  color:#222;
+  line-height:1.75;
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* Header */
+.page-header{
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 18px;
+  margin-bottom: 22px;
+}
+h1{
+  margin:0 0 6px;
+  font-size: 30px;
+  letter-spacing: .3px;
+}
+.subtitle{
+  margin:0;
+  color:#666;
+  font-size: 14px;
+}
+
+/* Banner */
+.banner{
+  margin: 18px 0 26px;
+  border: 1px solid #e6e6e6;
+  background:#fafafa;
+}
+.banner img{
+  width:100%;
+  height: auto;
+  display:block;
+}
+
+/* Blocks */
+.block{
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+}
+.block:first-of-type{ border-top: none; }
+h2{
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+p{ margin: 0 0 10px; }
+
+.hint{
+  color:#666;
+  font-size: 14px;
+}
+
+/* Info grid */
+.info-grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 18px;
+  margin-top: 10px;
+}
+.info-item{
+  border: 1px solid #eee;
+  padding: 12px 14px;
+  background:#fcfcfc;
+}
+.label{
+  color:#666;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.value{
+  font-weight: 700;
+}
+
+/* Schedule list */
+.schedule{
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+.schedule li{
+  margin: 10px 0;
+}
+.time{
+  display:inline-block;
+  min-width: 120px;
+  font-weight: 700;
+}
+.text{
+  color:#333;
+}
+
+/* Normal list */
+.list{
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+/* Buttons */
+.btn-row{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.btn{
+  display:inline-block;
+  padding: 10px 14px;
+  border: 1px solid #222;
+  color:#222;
+  text-decoration:none;
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn:hover{
+  background:#222;
+  color:#fff;
+}
+
+/* Footer */
+.footer{
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 2px solid #e6e6e6;
+  color:#555;
+  font-size: 14px;
+}
+.copy{
+  margin-top: 6px;
+  color:#888;
+  font-size: 12px;
+}
+
+/* RWD */
+@media (max-width: 700px){
+  .info-grid{ grid-template-columns: 1fr; }
+  .time{ min-width: 0; display:block; margin-bottom: 3px; }
+}
